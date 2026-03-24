@@ -1,0 +1,128 @@
+{
+  "items": [
+    {
+      "id": "water",
+      "name": "Вода",
+      "type": "resource",
+      "weight": 1.0,
+      "consumable": true,
+      "effects": {"thirst": -30}
+    },
+    {
+      "id": "food",
+      "name": "Еда",
+      "type": "resource",
+      "weight": 0.5,
+      "consumable": true,
+      "effects": {"hunger": -25}
+    },
+    {
+      "id": "wood",
+      "name": "Дрова",
+      "type": "resource",
+      "weight": 2.0,
+      "consumable": false
+    },
+    {
+      "id": "cloth",
+      "name": "Ткань",
+      "type": "resource",
+      "weight": 0.3,
+      "consumable": false
+    },
+    {
+      "id": "stone",
+      "name": "Камень",
+      "type": "resource",
+      "weight": 1.5,
+      "consumable": false
+    },
+    {
+      "id": "berries",
+      "name": "Ягоды",
+      "type": "resource",
+      "weight": 0.2,
+      "consumable": true,
+      "effects": {"hunger": -10, "thirst": -5}
+    },
+    {
+      "id": "mushrooms",
+      "name": "Грибы",
+      "type": "resource",
+      "weight": 0.2,
+      "consumable": true,
+      "effects": {"hunger": -15},
+      "poison_chance": 0.1
+    },
+    {
+      "id": "knife",
+      "name": "Нож",
+      "type": "tool",
+      "weight": 0.5,
+      "equipment_slot": "knife",
+      "bonuses": {"hunt": 15, "gather": 5}
+    },
+    {
+      "id": "flask",
+      "name": "Фляга",
+      "type": "tool",
+      "weight": 0.3,
+      "equipment_slot": "flask",
+      "capacity": 3
+    },
+    {
+      "id": "flashlight",
+      "name": "Фонарь",
+      "type": "tool",
+      "weight": 0.4,
+      "equipment_slot": "flashlight",
+      "bonuses": {"night": 10}
+    },
+    {
+      "id": "jacket",
+      "name": "Куртка",
+      "type": "tool",
+      "weight": 1.0,
+      "equipment_slot": "jacket",
+      "bonuses": {"warmth": 20}
+    },
+    {
+      "id": "bandage",
+      "name": "Бинт",
+      "type": "craft",
+      "weight": 0.1,
+      "consumable": true,
+      "effects": {"injury": "none"}
+    },
+    {
+      "id": "torch",
+      "name": "Факел",
+      "type": "craft",
+      "weight": 0.5,
+      "consumable": false,
+      "bonuses": {"night": 5, "warmth": 5}
+    },
+    {
+      "id": "trap",
+      "name": "Ловушка",
+      "type": "craft",
+      "weight": 1.0,
+      "consumable": false
+    },
+    {
+      "id": "water_filter",
+      "name": "Фильтр для воды",
+      "type": "craft",
+      "weight": 0.2,
+      "consumable": false,
+      "bonuses": {"water_quality": 1}
+    },
+    {
+      "id": "signal_part",
+      "name": "Сигнальная деталь",
+      "type": "quest",
+      "weight": 0.5,
+      "consumable": false
+    }
+  ]
+}

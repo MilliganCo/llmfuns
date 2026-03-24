@@ -1,0 +1,191 @@
+{
+  "findings": [
+    {
+      "id": "backpack_tree",
+      "name": "Рюкзак у дерева",
+      "tags": ["forest", "clearing"],
+      "weight": 5,
+      "requirements": {
+        "time": ["day", "evening"]
+      },
+      "effects": {
+        "items": [
+          {"id": "water", "quantity": 2},
+          {"id": "food", "quantity": 1},
+          {"id": "flask", "quantity": 1}
+        ]
+      },
+      "narrative_key": "finding_backpack"
+    },
+    {
+      "id": "abandoned_camp",
+      "name": "Заброшенный лагерь",
+      "tags": ["forest", "clearing"],
+      "weight": 4,
+      "requirements": {},
+      "effects": {
+        "items": [
+          {"id": "wood", "quantity": 3},
+          {"id": "cloth", "quantity": 2}
+        ]
+      },
+      "narrative_key": "finding_camp"
+    },
+    {
+      "id": "signal_part_location",
+      "name": "Сигнальная деталь",
+      "tags": ["abandoned_house", "ruins"],
+      "weight": 3,
+      "requirements": {},
+      "effects": {
+        "items": [
+          {"id": "signal_part", "quantity": 1}
+        ]
+      },
+      "narrative_key": "finding_signal_part"
+    },
+    {
+      "id": "medicine_cabinet",
+      "name": "Аптечка",
+      "tags": ["abandoned_house"],
+      "weight": 3,
+      "requirements": {},
+      "effects": {
+        "items": [
+          {"id": "bandage", "quantity": 2}
+        ]
+      },
+      "narrative_key": "finding_medicine"
+    },
+    {
+      "id": "fishing_spot",
+      "name": "Хорошее место для рыбалки",
+      "tags": ["river"],
+      "weight": 6,
+      "requirements": {},
+      "effects": {
+        "hunt_bonus": 20
+      },
+      "narrative_key": "finding_fishing_spot"
+    }
+  ],
+  "threats": [
+    {
+      "id": "wolves",
+      "name": "Волки",
+      "tags": ["forest", "night"],
+      "weight": 5,
+      "requirements": {
+        "time": ["night", "evening"],
+        "location": ["forest", "clearing"]
+      },
+      "effects": {
+        "hp": -15,
+        "injury": "bleeding",
+        "fear": 20
+      },
+      "narrative_key": "threat_wolves",
+      "avoid_chance": 0.4,
+      "combat_chance": 0.6
+    },
+    {
+      "id": "bandits",
+      "name": "Мародёры",
+      "tags": ["road", "abandoned_house"],
+      "weight": 3,
+      "requirements": {
+        "location": ["road", "abandoned_house", "ruins"]
+      },
+      "effects": {
+        "hp": -20,
+        "items_lost": true
+      },
+      "narrative_key": "threat_bandits",
+      "avoid_chance": 0.3,
+      "combat_chance": 0.7
+    },
+    {
+      "id": "bear",
+      "name": "Медведь",
+      "tags": ["forest"],
+      "weight": 2,
+      "requirements": {
+        "location": ["forest"]
+      },
+      "effects": {
+        "hp": -25,
+        "injury": "bleeding"
+      },
+      "narrative_key": "threat_bear",
+      "avoid_chance": 0.2,
+      "combat_chance": 0.8
+    },
+    {
+      "id": "snake",
+      "name": "Змея",
+      "tags": ["forest", "swamp"],
+      "weight": 4,
+      "requirements": {
+        "location": ["forest", "swamp"]
+      },
+      "effects": {
+        "hp": -10,
+        "injury": "infection"
+      },
+      "narrative_key": "threat_snake",
+      "avoid_chance": 0.5,
+      "combat_chance": 0.5
+    }
+  ],
+  "weather_events": [
+    {
+      "id": "sudden_cold",
+      "name": "Резкое похолодание",
+      "tags": ["night"],
+      "weight": 4,
+      "requirements": {
+        "time": ["night"]
+      },
+      "effects": {
+        "warmth": -20
+      },
+      "narrative_key": "weather_cold"
+    },
+    {
+      "id": "heavy_rain",
+      "name": "Сильный дождь",
+      "tags": ["rain"],
+      "weight": 3,
+      "requirements": {
+        "weather": ["rain"]
+      },
+      "effects": {
+        "wet": true,
+        "warmth": -15
+      },
+      "narrative_key": "weather_heavy_rain"
+    }
+  ],
+  "lore": [
+    {
+      "id": "note_survivor",
+      "name": "Записка выжившего",
+      "tags": ["abandoned_house"],
+      "weight": 2,
+      "requirements": {
+        "location": ["abandoned_house", "ruins"]
+      },
+      "effects": {},
+      "narrative_key": "lore_note"
+    },
+    {
+      "id": "radio_message",
+      "name": "Радиосообщение",
+      "tags": [],
+      "weight": 1,
+      "requirements": {},
+      "effects": {},
+      "narrative_key": "lore_radio"
+    }
+  ]
+}

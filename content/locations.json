@@ -1,0 +1,76 @@
+{
+  "locations": [
+    {
+      "id": "forest",
+      "name": "Лес",
+      "description": "Густой лес с высокими деревьями",
+      "danger_level": 1,
+      "connections": ["river", "road", "clearing"],
+      "gather_resources": ["wood", "berries", "mushrooms"],
+      "hunt_available": true
+    },
+    {
+      "id": "river",
+      "name": "Река",
+      "description": "Быстрая река с чистой водой",
+      "danger_level": 0,
+      "connections": ["forest", "road"],
+      "gather_resources": ["water", "stone"],
+      "hunt_available": true
+    },
+    {
+      "id": "abandoned_house",
+      "name": "Заброшенный дом",
+      "description": "Старый заброшенный дом",
+      "danger_level": 2,
+      "connections": ["road", "ruins"],
+      "gather_resources": ["cloth", "wood"],
+      "hunt_available": false
+    },
+    {
+      "id": "cave",
+      "name": "Пещера",
+      "description": "Тёмная пещера в скале",
+      "danger_level": 1,
+      "connections": ["forest", "ruins"],
+      "gather_resources": ["stone"],
+      "hunt_available": false
+    },
+    {
+      "id": "road",
+      "name": "Дорога",
+      "description": "Заросшая дорога",
+      "danger_level": 1,
+      "connections": ["forest", "river", "abandoned_house", "clearing"],
+      "gather_resources": [],
+      "hunt_available": false
+    },
+    {
+      "id": "clearing",
+      "name": "Поляна",
+      "description": "Открытая поляна в лесу",
+      "danger_level": 0,
+      "connections": ["forest", "road"],
+      "gather_resources": ["berries", "wood"],
+      "hunt_available": true
+    },
+    {
+      "id": "ruins",
+      "name": "Руины",
+      "description": "Разрушенные постройки",
+      "danger_level": 2,
+      "connections": ["abandoned_house", "cave"],
+      "gather_resources": ["cloth", "stone"],
+      "hunt_available": false
+    },
+    {
+      "id": "swamp",
+      "name": "Болото",
+      "description": "Заболоченная местность",
+      "danger_level": 2,
+      "connections": ["forest"],
+      "gather_resources": [],
+      "hunt_available": false
+    }
+  ]
+}

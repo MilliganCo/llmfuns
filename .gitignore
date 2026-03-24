@@ -1,0 +1,63 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+.venv/
+venv/
+ENV/
+env/
+
+# Environment
+.env
+.env.local
+
+# Data
+data/saves/*.json
+!data/saves/.gitkeep
+
+# Model cache
+hf_cache/
+hf_airllm_layers/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+
+.pytest_cache/
+.mypy_cache/
+# Node / frontend
+node_modules/
+dist/
+build/
+.next/
+.nuxt/
+desktop.ini
+# Secrets and local config
+.env.*
+!.env.example
+*.pem
+*.key
+*.p12
+*.crt
+id_rsa
+id_rsa.pub
+# Data and artifacts
+runs/
+tmp/
+tmp_pytorch/
+*.sqlite
+*.db
+*.csv
+*.xlsx
+*.xls

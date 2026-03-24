@@ -1,0 +1,15 @@
+# Core dependencies
+python-telegram-bot>=20.7
+torch>=2.0.0
+airllm>=2.11.0
+pydantic>=2.0.0
+python-dotenv>=1.0.0
+
+# Optional but recommended
+bitsandbytes>=0.41.0  # For 4bit/8bit compression
+accelerate>=0.24.0
+transformers>=4.35.0
+optimum==1.16.1  # Required by airllm (version with bettertransformer)
+
+# Utilities
+pyyaml>=6.0

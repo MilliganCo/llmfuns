@@ -1,5 +1,7 @@
 # Survival Game с AirLLM
 
+> Public experimental source: see [PUBLICATION.md](PUBLICATION.md) for actual checks, known defects, restored modules and operational limits. Earlier audit decisions are historical.
+
 Текстовая survival-игра в формате Telegram-бота с LLM-нарратором и детерминированной игровой механикой.
 
 ## Описание
